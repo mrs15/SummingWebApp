@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="addNumbersAlgorithm">
+      <HintPath>..\..\..\..\OneDrive\Desktop\addNumbersAlgorithm\for_redistribution_files_only\addNumbersAlgorithm.dll</HintPath>
+    </Reference>
+    <Reference Include="addNumbersAlgorithmNative">
+      <HintPath>..\..\..\..\OneDrive\Desktop\addNumbersAlgorithm\for_redistribution_files_only\addNumbersAlgorithmNative.dll</HintPath>
+    </Reference>
+    <Reference Include="MWArray">
+      <HintPath>..\..\..\..\OneDrive\Desktop\addNumbersAlgorithm\for_redistribution_files_only\MWArray.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
