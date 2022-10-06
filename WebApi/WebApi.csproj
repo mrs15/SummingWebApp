@@ -14,4 +14,10 @@
     <ProjectReference Include="..\DataAbstractionLayer\DataAbstractionLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="MWArray">
+      <HintPath>..\..\..\..\OneDrive\Desktop\addNumbersAlgorithm\for_redistribution_files_only\MWArray.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

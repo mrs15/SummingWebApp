@@ -12,7 +12,6 @@ namespace DataAbstractionLayer
         //once a response is received from the matlab dll; the method of this class
         //will return the summed amount to the web api
         //the web api will send the response to the frontend
-
         public MWArray sum_result(int a, int b)
         {
             addNumbersAlgorithm.Class1 class1 = new addNumbersAlgorithm.Class1();

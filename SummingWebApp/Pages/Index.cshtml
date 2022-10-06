@@ -4,6 +4,8 @@
     ViewData["Title"] = "Home page";
 }
 
+ 
+
 <div class="text-center">
     <h1 class="display-4">Welcome to MATLAB Based Calculator</h1>
     <br />
@@ -13,8 +15,31 @@
         <input type="text" id="firstNum" name="firstNum"><br>
         <label for="lnum">Second Number:</label><br>
         <input type="text" id="secondNum" name="secondNum"><br /><br />
-        <input type="submit" value="Submit">
     </form>
 
+    <button id="submitButton" onclick="getResults()">Add</button><br /><br />
+    <label id="resultID">Result: </label><br />
 
 </div>
+
+<script>
+
+    var URI = 'api/sumresult';
+
+   
+    function getResults()
+    {
+        //retrieve values from the two text fields
+        var first = document.getElementById("firstNum").value;
+        var second = document.getElementById("secondNum").value;
+
+        //convert to int
+        let firstINT = parseInt(first);
+        let secondINT = parseInt(second);
+
+        //replace with HTTP request to .NET Core API
+        let answer = firstINT+secondINT;
+        document.getElementById("resultID").innerHTML = answer;
+    }
+    
+</script>
